@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.WikiPage;
 
-
 public class SearchTests extends TestBase {
     WikiPage wikiPage =new WikiPage();
     String appiumElement = "Appium";
@@ -28,7 +27,5 @@ public class SearchTests extends TestBase {
         wikiPage.clickSearchWikipedia();
         wikiPage.searchElement(Bayern);
         wikiPage.checkText(text);
-
-
     }
 }

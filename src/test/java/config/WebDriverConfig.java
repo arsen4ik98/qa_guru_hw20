@@ -29,6 +29,4 @@ public interface WebDriverConfig extends Config{
     @Key("osVersion")
     @DefaultValue("13.0")
     String getOsVersion();
-
-
 }

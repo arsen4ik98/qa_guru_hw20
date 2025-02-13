@@ -33,7 +33,6 @@ public class TestBase {
         System.out.println(sessionId);
         Attach.pageSource();
         closeWebDriver();
-
         Attach.addVideo(sessionId);
     }
 }
