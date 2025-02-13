@@ -9,11 +9,11 @@ import pages.WikiPage;
 public class SearchTests extends TestBase {
     WikiPage wikiPage =new WikiPage();
     String appiumElement = "Appium";
-    String koreaElement = "Korea";
-    String text= "Region in East Asia";
+    String Bayern = "FC Bayern Munchen";
+    String text= "Season of football team";
 
     @Test
-    @DisplayName("Проверка,работы поисковой строки. Результаты поисков >0.")
+    @DisplayName("Проверка работы поисковой строки. Результат поиска > 0")
     @Tag("android")
     void successfulSearchTest() {
         wikiPage.clickSearchWikipedia();
@@ -22,11 +22,11 @@ public class SearchTests extends TestBase {
     }
 
     @Test
-    @DisplayName("Проверка текста, результатов поиска.")
+    @DisplayName("Проверка текста, d результатов поиска.")
     @Tag("android")
     void searchTextTest() {
         wikiPage.clickSearchWikipedia();
-        wikiPage.searchElement(koreaElement);
+        wikiPage.searchElement(Bayern);
         wikiPage.checkText(text);
 
 
